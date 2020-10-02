@@ -16,9 +16,7 @@ namespace kontakt
         }
         public void AddKontakt(String namn, String nr)
         {
-            Kontakt minKontakt = new Kontakt();
-            minKontakt.namn = namn;
-            minKontakt.telefonnummer = nr;
+            Kontakt minKontakt = new Kontakt(namn, nr);
             kontakter.Add(minKontakt);
         }
 
@@ -27,7 +25,7 @@ namespace kontakt
             Console.WriteLine();
             foreach(Kontakt enKontakt in kontakter)
             {
-                Console.WriteLine(enKontakt.namn + " har tel nr: " + enKontakt.telefonnummer);
+                Console.WriteLine(enKontakt.GetNamn() + " har tel nr: " + enKontakt.GetTelefonnummer());
             }
             Console.WriteLine();
         }

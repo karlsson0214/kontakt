@@ -10,14 +10,10 @@ namespace kontakt
         // metoder
         public void Run()
         {
-            Kontakt kontakt = new Kontakt();
-            kontakt.namn = "Ada";
-            kontakt.telefonnummer = "11";
+            Kontakt kontakt = new Kontakt("Ada", "11");
             bok.AddKontakt(kontakt);
 
-            Kontakt kontakt1 = new Kontakt();
-            kontakt1.namn = "Babbage";
-            kontakt1.telefonnummer = "1101";
+            Kontakt kontakt1 = new Kontakt("Babbage", "1101");
             bok.AddKontakt(kontakt1);
 
             bok.AddKontakt("Beda", "45");
