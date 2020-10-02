@@ -5,8 +5,23 @@ namespace kontakt
     class Kontakt
     {
         // objektvariabler
-        public string namn;
-        public string telefonnummer;
+        private string namn;
+        private string telefonnummer;
+
+        public Kontakt(string namnet, string telNr)
+        {
+            namn = namnet;
+            telefonnummer = telNr;
+        }
+
+        public string GetNamn()
+        {
+            return namn;
+        }
+        public string GetTelefonnummer()
+        {
+            return telefonnummer;
+        }
         
     }
 }
